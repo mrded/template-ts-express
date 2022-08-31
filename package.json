@@ -19,6 +19,7 @@
     "dotenv": "^16.0.2",
     "express": "^4.17.1",
     "http-errors": "^2.0.0",
+    "jest-junit": "^14.0.1",
     "response-time": "^2.3.2"
   },
   "devDependencies": {
