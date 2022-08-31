@@ -10,14 +10,9 @@ cp .env.example .env
 ```
 
 ## TODO:
-- Configuration:
-  - [ ] Env variables (dotenv)
-  - [ ] Secrets
 - Observability:
   - [ ] healthcheck
   - [ ] Traces
   - [ ] Logs
   - [ ] Metrics
-
 - [ ] Docker
-- [ ] CI/CD
