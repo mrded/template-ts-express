@@ -6,7 +6,6 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev src/index.ts",
     "build": "tsc",
-    "prepare": "npm run build",
     "lint": "eslint 'src/**/*.?s'",
     "test": "jest",
     "format": "prettier --write 'src/**/*.?s'"
