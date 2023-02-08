@@ -1,7 +1,11 @@
-module.exports = {
+import type { Config } from '@jest/types';
+
+const config: Config.InitialOptions = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   collectCoverageFrom: ['src/**/*.ts'],
+  rootDir: '.',
+  testRegex: '.*\\.spec\\.ts$',
   coverageReporters: ['text-summary', 'html'],
 
   reporters: [
@@ -19,3 +23,5 @@ module.exports = {
     ],
   ],
 };
+
+export default config;

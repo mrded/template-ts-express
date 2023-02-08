@@ -11,5 +11,5 @@ describe('healthcheck', () => {
 
     // Assert
     expect(res.status).toBe(200);
-  })
+  });
 });
