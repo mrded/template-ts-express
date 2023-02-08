@@ -9,7 +9,7 @@
     "pretty": true,
     "importHelpers": true,
     "strict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noImplicitReturns": true,
     "esModuleInterop": false
   },
