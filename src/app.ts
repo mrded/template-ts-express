@@ -6,7 +6,7 @@ import { setupLogging } from './middleware/logging';
 import { notFoundHandler } from './middleware/notFound';
 import { errorHandler } from './middleware/error';
 
-import { healthcheck } from './controllers/healthcheck';
+import healthcheckRouter from './controllers/healthcheck';
 
 export const createApp = (): express.Express => {
   const app = express();
@@ -17,7 +17,7 @@ export const createApp = (): express.Express => {
   // parse application/json
   app.use(bodyParser.json());
 
-  app.use('/healthcheck', healthcheck);
+  app.use('/healthcheck', healthcheckRouter);
 
   app.use(setupLogging);
 
